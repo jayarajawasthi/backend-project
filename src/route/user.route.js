@@ -7,8 +7,5 @@ import { registerUser } from "../controllers/user.controller";
 
 const router  = express.Router();
 
-// router.route("/register").get(registerUser)
-router.post("/register", registerUser)
-
-//localhost:8000/api/v1/users/register
+router.route("/register").get(registerUser)
 export default router
